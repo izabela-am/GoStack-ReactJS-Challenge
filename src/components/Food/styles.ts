@@ -16,9 +16,8 @@ export const Container = styled.div<IFoodPlateProps>`
     transition: 0.3s opacity;
     text-align: center;
 
-    ${props =>
-      !props.available &&
-      css`
+    ${(props) => !props.available
+      && css`
         opacity: 0.3;
       `};
 
